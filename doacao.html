@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Instituto (A)MAR</title>
+    <meta name="description" content="Site do Instituto (A)MAR">
+    <link rel="icon" href="img/Logo Instituto.png" sizes="32x32" type="image/png">
+    <!-- custom.css -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- font-awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    
+    <!-- AOS -->
+    <link rel="stylesheet" href="css/aos.css">  
+</head>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 1001;
+}
+
+.modal img {
+    max-width: 100%;
+    height: auto;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.custom-cta {
+    background-color: #c92672;
+    color: #272727; /* Cor preta para o texto */
+}
+
+.custom-cta:hover {
+    background-color: #2e1822;
+    color: #e7e7e7; /* Cor preta para o texto */
+}
+
+    h1{
+        overflow-y: hidden;
+    }
+
+    h2{
+        overflow-y: hidden;
+    }
+
+    h4{
+        overflow-y: hidden;
+    }
+
+    p{
+        overflow-y: hidden;
+    }
+    
+    .container {
+    text-align: center;
+}
+
+.imagem-qrcode img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; /* Garante que a imagem não exceda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+</style>
+
+<body>
+    <!-- banner -->
+    <div class="jumbotron jumbotron-fluid" id="banner" style="background-image: url(img/criancas.jpg);">
+        <div class="container text-center text-md-left">
+            <header>
+                <div class="row justify-content-between">
+                    <div class="col-2">
+                        <img src="img/Logo Instituto.png" alt="logo">
+                    </div>
+                    <div class="col-6 align-self-center text-right">
+                        <a href="#equipe" class="text-white lead" onclick="scrollToSection()"> Nossa equipe </a>
+                    </div>
+                </div>
+            </header>
+            <h1 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="display-3 text-white font-weight-bold my-5">
+            	Instituto <span style="color: rgb(248, 95, 120);"> A(MAR) </span> <br>
+                Página de Doação - QR CODE
+            </h1>
+            <p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="lead text-white my-4">
+                Faça uma doação e colabore conosco!
+                <br> Aqui, nós priorizamos o amor, o acolhimento e o cuidado! 
+            </p>
+            <a href="index.html" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="btn my-4 font-weight-bold atlas-cta cta-blue">Retornar a página inicial</a>
+        
+        </div>
+    </div>
+
+    <!-- three-block -->
+    <div class="container my-5 py-2">
+        <h2 class="text-center font-weight-bold my-5">QR-Code PIX</h2>
+        <div class="imagem-qrcode"> 
+            <img src="img/qrcode.jpg" alt="QRCODE PIX">
+        </div>
+
+        <div class="secao-informacao"> 
+            <h2 class="text-center font-weight-bold d-block mb-3">Por que colaborar com o Instituto?</h2>
+            <div class="container">
+                <div class="row justify-content-between text-center text-md-left">
+                    <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 flex-md-last">
+                        <p class="my-4" style="color: #272727;">
+                            Nosso compromisso com a comunidade vai além das atividades regulares. Organizamos eventos que fortalecem os laços comunitários, promovem a inclusão e 
+                            celebram a diversidade cultural.
+                            O Instituto Amar é um espaço dedicado à promoção da cultura, educação, sustentabilidade e inclusão. Oferecemos uma variedade de atividades e projetos que enriquecem a 
+                            comunidade e promovem o bem-estar social. Colaborando com o instituto, você colabora com todas nossas atividades: <br>
+                            Oficinas culturais gratuitas aos sábados com alimentação inclusa sobre inclusão, diversidade, cultura e sustentabilidade. <br>
+                            <b> - Projeto Maré Limpa e Reciclagem: </b> Incentivamos a sustentabilidade através da conscientização ambiental e práticas de reciclagem.<br>
+                            <b> - Festival Afro e Indígena Brasileiro:</b> Celebração da diversidade e inclusão cultural, destacando as riquezas das culturas afro-brasileiras e indígenas.<br>
+                            <b> - Projeto de Valorização da Vida: </b> Abordamos temas sensíveis como depressão e suicídio, promovendo a diversidade e a inclusão.<br>
+                            <b> - Arena CCAIB Oficina de Férias: </b> Enriquecemos as férias com atividades culturais, promovendo diversidade e inclusão.<br>
+    
+                        
+                    </div>
+                    <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center flex-md-first">
+                        <img src="img/Colaboracao.png" alt="Safe and reliable" class="mx-auto d-block" style="border-radius: 25px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- client -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+    <div class="jumbotron jumbotron-fluid" id="contact" style="background-image: url(img/contact-bk.jpg); border-radius: 10px;" >
+        <div class="container my-5">
+            <div class="row justify-content-between">
+                <div class="col-md-6 text-white">
+                    <h2 class="font-weight-bold">Nos Contate! </h2>
+                    <p class="my-4">
+                        Coloque seu email e envie sua pergunta.
+                        <br> Temos profissionais aptos para respondê-lo!
+                    </p>
+                    <ul class="list-unstyled">
+                        <li>Email : institutoamar@gmail.com</li>
+                        <li>Telefone : (13) 98834-2378 </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                    	<div class="row">
+	                        <div class="form-group col-md-6">
+	                            <label for="name">Seu nome</label>
+	                            <input type="name" class="form-control" id="name">
+	                        </div>
+	                        <div class="form-group col-md-6">
+	                            <label for="Email">Seu melhor email</label>
+	                            <input type="email" class="form-control" id="Email">
+	                        </div>
+	                    </div>
+	                    <div class="form-group">
+	                        <label for="message">Mensagem</label>
+	                        <textarea class="form-control" id="message" rows="3"></textarea>
+	                    </div>
+                        <button type="submit" class="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<!-- copyright -->
+	<div class="jumbotron jumbotron-fluid" id="copyright">
+        <div class="container">
+            <div class="row justify-content-between">
+            	<div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+                    Copyright © 2023 - Instituto (A)MAR
+                </div>
+                <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media" style="overflow-y: hidden;">
+                    <a href="#" class="d-inline-block text-center ml-2" style="overflow-y: hidden;">
+                    	<i class="fa fa-facebook" aria-hidden="true" style="overflow-y: hidden;"></i>
+                    </a>
+                    <a href="#" class="d-inline-block text-center ml-2" style="overflow-y: hidden;">
+                    	<i class="fa fa-twitter" aria-hidden="true" style="overflow-y: hidden;"></i>
+                    </a>
+                    <a href="#" class="d-inline-block text-center ml-2" style="overflow-y: hidden;">
+                    	<i class="fa fa-instagram" aria-hidden="true" style="overflow-y: hidden;"></i>
+                    </a>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    
+    <!-- AOS -->
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+      });
+
+    </script>
+</body>
+
+</html>
